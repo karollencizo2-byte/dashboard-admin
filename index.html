@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Ventas y Métricas</title>
+  <!-- Enlace a tu archivo CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Íconos de FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    
+    <!-- Sidebar -->
+    <aside class="sidebar" role="navigation" aria-label="Menú principal">
+      <div class="sidebar-header">
+        <i class="fa-solid fa-chart-line logo-icon" aria-hidden="true"></i>
+        <h2>Analytics</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#" class="active" aria-current="page"><i class="fa-solid fa-house" aria-hidden="true"></i> <span>Inicio</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-box" aria-hidden="true"></i> <span>Inventario</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> <span>Ventas</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-users" aria-hidden="true"></i> <span>Usuarios</span></a></li>
+          <li><a href="#"><i class="fa-solid fa-gear" aria-hidden="true"></i> <span>Ajustes</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input type="search" placeholder="Buscar métricas, usuarios..." aria-label="Buscar en el dashboard">
+      </div>
+      <div class="header-profile">
+        <button class="icon-btn" aria-label="Notificaciones">
+          <i class="fa-solid fa-bell" aria-hidden="true"></i>
+        </button>
+        <div class="user-info">
+          <img src="https://via.placeholder.com/40" alt="Foto de perfil de Alex Morgan" class="avatar">
+          <span>Alex Morgan</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" role="main">
+      <section class="cards-grid" aria-label="Métricas clave">
+        <article class="card">
+          <div class="card-info">
+            <p class="card-title">Ingresos Totales</p>
+            <p class="card-value">$45,230</p>
+            <span class="badge positive">+12.5%</span>
+          </div>
+          <div class="card-icon blue"><i class="fa-solid fa-dollar-sign" aria-hidden="true"></i></div>
+        </article>
+
+        <article class="card">
+          <div class="card-info">
+            <p class="card-title">Pedidos Activos</p>
+            <p class="card-value">1,240</p>
+            <span class="badge positive">+5.2%</span>
+          </div>
+          <div class="card-icon green"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></div>
+        </article>
+
+        <article class="card">
+          <div class="card-info">
+            <p class="card-title">Nuevos Clientes</p>
+            <p class="card-value">384</p>
+            <span class="badge negative">-2.1%</span>
+          </div>
+          <div class="card-icon orange"><i class="fa-solid fa-user-plus" aria-hidden="true"></i></div>
+        </article>
+      </section>
+
+      <section class="table-section" aria-label="Transacciones recientes">
+        <h3>Transacciones Recientes</h3>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Cliente</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Monto</th>
+                <th scope="col">Fecha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ana Gómez</td>
+                <td><span class="status completed">Completado</span></td>
+                <td>$250.00</td>
+                <td>03 Sep 2026</td>
+              </tr>
+              <tr>
+                <td>Carlos Ruiz</td>
+                <td><span class="status pending">Pendiente</span></td>
+                <td>$120.50</td>
+                <td>02 Sep 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <p>&copy; 2026 Dashboard Analytics. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
